@@ -3,7 +3,7 @@ sources:
   - name: raw
     schema: gz_raw_data
     tables:
-      - name: product
+      - name: product 
         identifier: raw_gz_product
         description: products of Greenweez
         columns:
