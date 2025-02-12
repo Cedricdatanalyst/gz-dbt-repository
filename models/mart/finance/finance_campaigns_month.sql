@@ -1,4 +1,4 @@
-SELECT
+ SELECT
      date_trunc(date_date, MONTH) AS datemonth,
      SUM(operational_margin - ads_cost) AS ads_margin,
      ROUND(SUM(average_basket),2) AS average_basket,
@@ -13,8 +13,8 @@ SELECT
      SUM(shipping_fee) AS shipping_fee,
      SUM(logcost) AS logcost,
      SUM(ship_cost) AS ship_cost,
-FROM {{ ref('int_campaigns_day') }}
+ FROM {{ ref('int_campaigns_day') }}
  FULL OUTER JOIN {{ ref('finance_days') }}
      USING (date_date)
-GROUP BY datemonth
-ORDER BY datemonth desc
+ GROUP BY datemonth
+ ORDER BY datemonth desc
