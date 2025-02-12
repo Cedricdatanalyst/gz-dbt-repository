@@ -14,6 +14,6 @@ SELECT
      logcost,
      ship_cost
  FROM {{ ref('finance_days') }}
- FULL OUTER JOIN {{ ref('int_campaigns_day') }}
+ FULL OUTER JOIN {{ ref('int_campaigns_day') }} 
      USING (date_date)
  ORDER BY date_date DESC
