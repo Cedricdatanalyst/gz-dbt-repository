@@ -168,7 +168,7 @@ models:
          description: the cost of preparing the parcel in the distribution centre/warehouse
        - name: ship_cost
          description: shipping cost paid by Greenweez to the carrier/logistics provider
-         
+
    - name: int_campaigns
      description: data from all campaigns
      columns:
@@ -200,6 +200,19 @@ models:
          description: average basket cost for each day
          tests:
            - not_null
+
+           - name: date_date
+           - name: operational_margin 
+           - name: ads_cost 
+           - name: ads_impression 
+           - name: ads_clicks 
+           - name: quantity 
+           - name: revenue 
+           - name: purchase_cost 
+           - name: margin 
+           - name: shipping_fee 
+           - name: logcost 
+           - name: ship_cost
 
    - name: finance_campaigns_month
      description: global kpi - monthly
